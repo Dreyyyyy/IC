@@ -9,14 +9,32 @@ Utilize os comandos abaixo no terminal:
 * source /caminho/para/pasta/.venv/criada/
 * pip install -r requirements.txt
 ## Funcionamento de cada algoritmo
-São três algoritmos:
+São dois algoritmos:
 ### convert_dataset
 * Utilizar este primeiramente para converter os "shapes" criados no QGIS ou ArcGIS para imagens .tif únicas;
 * O "shapefile" deve conter o mesmo formato de mapa dos "rasters";
 * Alterar no algoritmo os diretórios para as pastas do seu sistema.
-### split_dataset
-* Utilizar posteriormente para criação de diretórios de treino e teste contendo as imagens .tif;
-* Alterar no algoritmo os diretórios para as pastas do seu sistema.
 ### cnn
+* Utilizar posteriormente para criação de diretórios de treino e teste contendo as imagens .tif;
+* Pro algoritmo reconhecer as classes, é necessário que existam duas pastas separadas para cada classes dentro do diretório de treino e teste, exemplo: 
+- train_folder
+    - class_1_folder (e.g., pinus)
+        - image1.tif
+        - image2.tif
+        ...
+    - class_2_folder (e.g., non_pinus)
+        - image1.tif
+        - image2.tif
+        ...
+- test_folder
+    - class_1_folder (e.g., pinus)
+        - image1.tif
+        - image2.tif
+        ...
+    - class_2_folder (e.g., non_pinus)
+        - image1.tif
+        - image2.tif
+        ...
+* Alterar no algoritmo os diretórios para as pastas do seu sistema;
 * Algoritmo CNN ML de rede neural para teste do dataset;
 * Alterar no algoritmo os diretórios para as pastas do seu sistema.

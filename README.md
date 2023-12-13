@@ -6,7 +6,7 @@ Primeiramente, é recomendável criar um "virtual enviroment" para instalar as b
 ### Criando um "virtual enviroment" no vscode
 Utilize os comandos abaixo no terminal:
 * python -m venv .venv
-* source /caminho/para/pasta/.venv/criada/
+* source /caminho/para/arquivo/activate/no/.venv/bin/
 * pip install -r requirements.txt
 ## Funcionamento de cada algoritmo
 São dois algoritmos:
